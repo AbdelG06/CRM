@@ -3,7 +3,6 @@ import { useState } from "react";
 const initialForm = {
   nom: "",
   email: "",
-  telephone: "",
   entreprise: ""
 };
 
@@ -38,12 +37,6 @@ function ClientForm({ onAjouter }) {
         value={form.email}
         onChange={handleChange}
         required
-      />
-      <input
-        name="telephone"
-        placeholder="Téléphone"
-        value={form.telephone}
-        onChange={handleChange}
       />
       <input
         name="entreprise"
