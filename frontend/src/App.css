@@ -1,0 +1,176 @@
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0;
+  color: #172554;
+  font-size: 40px;
+}
+
+h2 {
+  margin-bottom: 18px;
+  color: #1e293b;
+  font-size: 20px;
+}
+
+.eyebrow {
+  margin-bottom: 8px;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.total {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  color: #64748b;
+}
+
+.total strong {
+  color: #2563eb;
+  font-size: 32px;
+}
+
+.panel {
+  margin-bottom: 20px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgb(15 23 42 / 5%);
+}
+
+.client-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) auto;
+  gap: 10px;
+}
+
+input,
+select,
+button {
+  min-height: 42px;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: inherit;
+}
+
+button {
+  border-color: #2563eb;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.message {
+  margin: 12px 0;
+  color: #1d4ed8;
+  font-weight: 700;
+}
+
+.list-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.recherche {
+  width: min(360px, 100%);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 14px 10px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+  white-space: nowrap;
+}
+
+th {
+  color: #64748b;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.name-cell {
+  color: #172554;
+  font-weight: 700;
+}
+
+.delete-button {
+  border-color: #dc2626;
+  background: transparent;
+  color: #dc2626;
+}
+
+.delete-button:hover {
+  background: #fef2f2;
+}
+
+.empty {
+  margin-bottom: 0;
+  color: #64748b;
+}
+
+@media (max-width: 900px) {
+  .client-form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .client-form button {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 24px 12px;
+  }
+
+  header,
+  .list-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .client-form {
+    display: flex;
+    flex-direction: column;
+  }
+}
