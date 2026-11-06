@@ -1,0 +1,9 @@
+{
+  "name": "crm-mern",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix backend run dev",
+    "start": "npm --prefix frontend start",
+    "build": "npm --prefix frontend run build"
+  }
+}
